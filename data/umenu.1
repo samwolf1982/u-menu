@@ -1,0 +1,20 @@
+.TH UMENU 1
+.SH NAME
+Umenu \- GTK+ Clipboard Manager.
+.SH SYNOPSIS
+umenu [OPTIONS] [CHECKSUM]
+.SH DESCRIPTION
+Umenu is a lightweight clipboard manager for Linux written in Vala which "aims to be the best integrated clipboard manager for the Gnome/GTK+ desktop". Umenu features include Ubuntu indicator, clipboard sync (primary selection and Ctrl+C / Ctrl+V clipboard) and a zeitgeist integration for an infinite clipboard history.
+.SH OPTIONS
+.IP "-h, --help"
+Show help options
+.IP "-v, --version"
+Print version information
+.SH CHECKSUM
+Specific clipboard content are identified by their unique SHA-1 checksum. Calling uri clipboard:checksum will trigger Umenu to copy the specific content into clipboard.
+.SH ENVIRONMENT VARIABLES
+.IP G_MESSAGES_DEBUG
+Set to
+.B all
+to enable debug messages.
+

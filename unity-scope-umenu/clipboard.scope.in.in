@@ -1,0 +1,48 @@
+[Scope]
+DBusName=com.biryukwolf.umenu.Unity.Scope.Clipboard
+DBusPath=/com/biryukwolf/umenu/unity/scope/clipboard
+RequiredMetadata=date_copied[s];
+OptionalMetadata=origin[s];
+Keywords=clipboard;umenu;
+Name=Clipboard History
+Description=This is an Ubuntu search plugin that enables information from Umenu to be searched and displayed in the Dash underneath the Clipboard header.
+SearchHint=Search clipboard
+Type=clipboard
+IsMaster=true
+Shortcut=b
+Icon=@DATADIR@/icons/ubuntu-mono-dark/status/16/umenu-panel.svg
+
+#
+# Make translation work with Ubuntu's special handling of keyfiles
+#
+[Desktop Entry]
+X-Ubuntu-Gettext-Domain=umenu
+
+[Category text]
+Name=Text
+Icon=/usr/share/icons/unity-icon-theme/places/svg/group-notes.svg
+DedupField=uri
+
+[Category files]
+Name=Files
+Icon=/usr/share/icons/unity-icon-theme/places/svg/group-files.svg
+DedupField=uri
+
+[Category images]
+Name=Images
+Icon=/usr/share/icons/unity-icon-theme/places/svg/group-photos.svg
+DedupField=uri
+
+[Filter category]
+Name=Category
+Type=filter-checkoption
+SortType=display-name
+OptionIDs=text;files;images
+OptionNames=Text;Files;Images
+
+[Filter date_copied]
+Name=Date copied
+Type=filter-radiooption
+OptionIDs=last-24-hours;last-7-days;last-30-days;last-year;
+OptionNames=Last 24 hours;Last 7 days;Last 30 days;Last year;
+

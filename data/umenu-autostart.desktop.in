@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=UMenu
+GenericName=Clipboard Manager
+Comment=GTK+ Clipboard Manager
+Icon=umenu
+NotShowIn=KDE;
+Exec=umenu
+Terminal=false
+Categories=GTK;GNOME;Utility;
+StartupNotify=false
+MimeType=x-scheme-handler/clipboard;
+

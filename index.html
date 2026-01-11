@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="uk" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMenu - Завантаження</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            500: '#3b82f6', // Blue-500
+                            600: '#2563eb', // Blue-600
+                            900: '#1e3a8a', // Blue-900
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+
+        /* Custom scrollbar for terminal */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #1f2937; }
+        ::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #6b7280; }
+    </style>
+</head>
+<body class="bg-slate-950 text-white min-h-screen flex flex-col selection:bg-brand-500 selection:text-white">
+
+<!-- Header -->
+<header class="w-full border-b border-white/10 backdrop-blur-md bg-slate-950/80 fixed top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <i class="fa-solid fa-layer-group text-brand-500 text-2xl"></i>
+            <span class="font-bold text-xl tracking-tight">UMenu</span>
+        </div>
+        <div class="text-sm text-slate-400">
+            v1.0.0 Release
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="flex-grow flex items-center justify-center pt-24 pb-12 px-4">
+    <div class="max-w-6xl w-full grid lg:grid-cols-2 gap-12 items-center">
+
+        <!-- Left Column: Info -->
+        <div class="space-y-8">
+            <div class="space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-900/30 border border-brand-500/30 text-brand-500 text-xs font-bold uppercase tracking-wider">
+                        <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-500 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
+                        </span>
+                    Latest Release
+                </div>
+
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+                    Ваше меню.<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-purple-500">Ваші правила.</span>
+                </h1>
+            </div>
+
+            <div class="space-y-4">
+                <p class="text-lg text-slate-300 font-medium">
+                    Це меню буфера обміну працює на будь-якому сучасному дистрибутиві Linux.
+                </p>
+
+                <!-- Distro Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm text-slate-400 font-mono bg-slate-900/50 p-4 rounded-xl border border-white/5">
+                    <div class="flex flex-col">
+                        <span class="text-brand-500 font-bold mb-1">Debian-based</span>
+                        <span>Ubuntu, Linux Mint, Pop!_OS, Kali</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-brand-500 font-bold mb-1">RHEL-based</span>
+                        <span>Fedora, CentOS, RHEL, AlmaLinux</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-brand-500 font-bold mb-1">Arch-based</span>
+                        <span>Arch Linux, Manjaro, EndeavourOS</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-brand-500 font-bold mb-1">Others</span>
+                        <span>openSUSE, Solus, Void, NixOS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature Badges -->
+            <div class="flex flex-wrap gap-3 pt-2">
+                    <span class="px-3 py-1 rounded bg-slate-800 border border-slate-700 text-xs text-slate-300 flex items-center gap-2">
+                        <i class="fa-brands fa-linux"></i> x86_64
+                    </span>
+                <span class="px-3 py-1 rounded bg-slate-800 border border-slate-700 text-xs text-slate-300 flex items-center gap-2">
+                        <i class="fa-solid fa-box"></i> AppImage
+                    </span>
+                <span class="px-3 py-1 rounded bg-slate-800 border border-slate-700 text-xs text-slate-300 flex items-center gap-2">
+                        <i class="fa-solid fa-bolt"></i> Portable
+                    </span>
+            </div>
+        </div>
+
+        <!-- Right Column: Actions -->
+        <div class="space-y-6">
+
+            <!-- Option 1: The Pro Way (Terminal) -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-2xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 opacity-50 group-hover:opacity-100 transition-opacity">
+                    <i class="fa-solid fa-terminal text-6xl text-slate-800"></i>
+                </div>
+
+                <h3 class="text-lg font-bold mb-2 flex items-center gap-2">
+                    <i class="fa-solid fa-code text-brand-500"></i>
+                    Швидка інсталяція
+                </h3>
+                <p class="text-sm text-slate-400 mb-4">
+                    Автоматично скачає, встановить у <code class="bg-slate-800 px-1 py-0.5 rounded text-slate-300">~/.local/bin</code> та створить ярлик у меню.
+                </p>
+
+                <div class="relative">
+                    <!-- Command Logic: Dynamic generation via JS below -->
+                    <div class="bg-black/50 rounded-lg p-4 mono text-sm text-slate-300 border border-slate-700 overflow-x-auto whitespace-nowrap pr-12" id="cmd-box">
+                        <span class="animate-pulse">Loading command...</span>
+                    </div>
+                    <button onclick="copyCmd()" class="absolute right-2 top-2 p-2 text-slate-400 hover:text-white transition-colors" title="Скопіювати">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                </div>
+                <div id="copy-feedback" class="h-4 mt-2 text-xs text-green-500 font-mono opacity-0 transition-opacity">
+                    <i class="fa-solid fa-check"></i> Скопійовано в буфер обміну
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="relative flex items-center py-2">
+                <div class="flex-grow border-t border-slate-800"></div>
+                <span class="flex-shrink-0 mx-4 text-slate-600 text-xs uppercase font-bold">або вручну</span>
+                <div class="flex-grow border-t border-slate-800"></div>
+            </div>
+
+            <!-- Option 2: Direct Download -->
+            <a href="release/UMenu-x86_64.AppImage" download class="block w-full group">
+                <div class="bg-white hover:bg-slate-200 text-slate-950 rounded-xl p-4 transition-all transform hover:-translate-y-1 shadow-lg flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-slate-200 group-hover:bg-white p-3 rounded-lg transition-colors">
+                            <i class="fa-solid fa-download text-xl"></i>
+                        </div>
+                        <div class="text-left">
+                            <div class="font-bold text-lg">Завантажити AppImage</div>
+                            <div class="text-xs text-slate-500 font-mono">UMenu-x86_64.AppImage</div>
+                        </div>
+                    </div>
+                    <div class="text-slate-400 group-hover:text-slate-600">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="border-t border-white/5 py-8 text-center text-slate-600 text-sm">
+    <p>&copy; 2025 biryukwolf@yahoo.com. Всі права захищено.</p>
+</footer>
+
+<script>
+    // --- DYNAMIC COMMAND GENERATION ---
+    // Цей скрипт автоматично визначає URL сторінки
+    // і підставляє його в curl команду.
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // Отримуємо базовий URL (без index.html, якщо є)
+        let baseUrl = window.location.href;
+        if (baseUrl.endsWith('index.html')) {
+            baseUrl = baseUrl.replace('index.html', '');
+        }
+        // Прибираємо trailing slash якщо є
+        baseUrl = baseUrl.replace(/\/$/, '');
+
+        const scriptUrl = `${baseUrl}/install.sh`;
+        const appUrl = `${baseUrl}/release/UMenu-x86_64.AppImage`;
+        const appName = "UMenu";
+
+        const cmdHTML = `curl -fsSL <span class="text-brand-500">${scriptUrl}</span> | bash -s -- "${appUrl}" "${appName}"`;
+
+        document.getElementById('cmd-box').innerHTML = cmdHTML;
+    });
+
+    function copyCmd() {
+        const cmdText = document.getElementById('cmd-box').innerText;
+        navigator.clipboard.writeText(cmdText).then(() => {
+            const feedback = document.getElementById('copy-feedback');
+            feedback.classList.remove('opacity-0');
+            setTimeout(() => {
+                feedback.classList.add('opacity-0');
+            }, 2000);
+        });
+    }
+</script>
+</body>
+</html>

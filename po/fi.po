@@ -1,0 +1,317 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: umenu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-05 14:18+0200\n"
+"PO-Revision-Date: 2017-04-06 13:50+0000\n"
+"Last-Translator: rainland <reino.kinner@aalto.fi>\n"
+"Language-Team: Finnish <fi@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2017-06-06 05:55+0000\n"
+"X-Generator: Launchpad (build 18399)\n"
+"Language: fi\n"
+
+#: ../data/umenu.desktop.in.h:1
+msgid "Clipboard Manager"
+msgstr "Leikepöydän hallinta"
+
+#: ../data/umenu.desktop.in.h:2
+msgid "GTK+ Clipboard Manager"
+msgstr "GTK+-pohjainen leikepöydän hallinta"
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:1
+msgid "Use clipboard (Ctrl+C)"
+msgstr "Käytä leikepöytää (Ctrl+C)"
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:2
+#: ../data/preferences.ui.h:3
+msgid ""
+"Adds content which is copied to the clipboard with e.g. Ctrl + C to the "
+"clipboard history."
+msgstr ""
+"Lisää leikepöytään kopioidun sisällön esim. näppäinkomennolla Ctrl + C "
+"leikepöydän historiaan."
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:3
+msgid "Use primary selection"
+msgstr "Käytä ensisijaista valintaa"
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:4
+#: ../data/preferences.ui.h:5
+msgid ""
+"Adds the primary selection (an area of the screen which is selected with the "
+"mouse) to the clipboard history. Enabling will start process which "
+"continually checks what is selected. This might discharge your battery "
+"quicker."
+msgstr ""
+"Lisää ensisijaisen valinna (maalattu alue) leikepöydän historiaan. Valinta "
+"aloittaa prosessin, joka tarkistaa toistuvasti valinnan. Tämä valinta "
+"saattaa kuluttaa virtaa enemmän."
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:5
+msgid "Add images to clipboard history"
+msgstr "Lisää kuvat leikepöydän historiaan"
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:6
+#: ../data/preferences.ui.h:7
+msgid ""
+"Add images copied to clipboard to clipboard history (e.g. when you right "
+"click on an image in your browser and choose copy image). Enabling this "
+"option will increase memory consumption. Images already added to clipboard "
+"history will remain even when disabled."
+msgstr ""
+"Lisää kopioidut kuvat leikepöydälle (ja sen historiaan) (esim. silloin, kun "
+"painat kuvaa oikealla hiiren näppäimellä ja valitset 'kopioi'). Tämä valinta "
+"lisää muistinkäyttöä. Aikaisemmin lisätyt kuvat säilyvät historiassa vaikka "
+"valinta poistettaisiin."
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:7
+msgid "Synchronize clipboards"
+msgstr "Synkronoi leikepöydät"
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:8
+#: ../data/preferences.ui.h:11
+msgid ""
+"Synchronizes the selection (an area of the screen which is selected with the "
+"mouse) and the clipboard so that anything in the selection is immediately "
+"available in the clipboard and vice versa e.g. for pasting with Ctrl + V and "
+"the middle mouse button."
+msgstr ""
+"Synkronoi valinnan (maalattu alue) ja leikepöydän niin, että kaikki, mikä on "
+"valittuna on heti tavoiteltavissa leikepöydältä ja päinvastoin (esim. "
+"liittämällä Ctrl + V ja hiiren oikea näppäin)."
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:9
+msgid "Keep clipboard content"
+msgstr "Pidä leikepöydän sisältö"
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:10
+#: ../data/preferences.ui.h:9
+msgid ""
+"Prevents an empty clipboard. For instance when an application exits, the "
+"clipboard would usually be emptied."
+msgstr ""
+"Estää tyhjän leikepöydän. Esimerkkitapaus: kun sovellus sulkeutuu, "
+"leikepöytä saattaisi yleensä tyhjentyä."
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:11
+msgid "Automatically paste selected item"
+msgstr "Liitä valittu kohde automaattisesti"
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:12
+#: ../data/preferences.ui.h:13
+msgid ""
+"Automatically paste selected item instead of just copying it to the "
+"clipboard."
+msgstr ""
+"Liitä valittu kohde automaattisesti sen sijaan, että kohde vain kopioidaan "
+"leikepöydälle."
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:13
+msgid "Number of recent clipboard items"
+msgstr "Viimeaikaisten leikepöydän osien lukumäärä"
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:14
+msgid "Number of recent clipboard items shown in clipboard menu."
+msgstr ""
+"Viimeaikaisten leikepöydän osien lukumäärä joka näytetään "
+"leikepöytävalikossa."
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:15
+msgid "Clipboard content filter pattern"
+msgstr "Leikepöydän sisällön suodattimen kaava"
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:16
+msgid ""
+"Regex filter pattern whereas all clipboard items matching this pattern will "
+"be filtered and not added to clipboard history."
+msgstr ""
+"Säännöllisen lausekkeen suodatin missä kaikki leikepöydän kohdat, jotka "
+"vastaavat tätä malliin, suodatetaan eikä niitä lisätä leikepöydän historiaan."
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:17
+msgid "Lookup dictionary for application using different paste keybindings"
+msgstr ""
+"Hakusanakirja sovellukselle, joka käyttää eri liittämisen näppäinkomentoja."
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:18
+msgid ""
+"A lookup dictionary for applications using different paste keybindings than "
+"Ctrl + V. Pattern of each string in this array is path-of-app|keybinding"
+msgstr ""
+"Hakusanakirja sovellukselle, joka käyttää jotain muuta liittämisen "
+"näppäinkomento kuin Ctrl + V. Jokaisen merkkijonon malli tässä taulukossa on "
+"sovelluksen-polku|pikanäppäin"
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:19
+msgid "Active plugins"
+msgstr "Käytössä olevat liitännäiset"
+
+#: ../data/net.launchpad.Umenu.gschema.xml.in.in.h:20
+msgid "List of active plugins."
+msgstr "Luettelo käytössä olevista liitännäisistä."
+
+#: ../data/preferences.ui.h:1
+msgid "Umenu Preferences"
+msgstr "Umenu asetukset"
+
+#: ../data/preferences.ui.h:2
+msgid "_Use clipboard (Ctrl+C)"
+msgstr "_Käytä leikepöytää (Ctrl+C)"
+
+#: ../data/preferences.ui.h:4
+msgid "Use _primary selection"
+msgstr "Käytä _ensisijaista valintaa"
+
+#: ../data/preferences.ui.h:6
+msgid "Add _images to clipboard history"
+msgstr "Lisää ku_vat leikepöydän historiaan"
+
+#: ../data/preferences.ui.h:8
+msgid "_Keep clipboard content"
+msgstr "_Säilytä leikepöydän sisältö"
+
+#: ../data/preferences.ui.h:10
+msgid "S_ynchronize clipboards"
+msgstr "S_ynkronoi leikepöydät"
+
+#: ../data/preferences.ui.h:12
+msgid "_Automatically paste selected item"
+msgstr "_Liitä valittu kohde automaattisesti"
+
+#: ../data/preferences.ui.h:14
+msgid "Number of recent clipboard items to be shown in clipboard menu."
+msgstr "Leikepöytävalikossa näytettävien kohteiden lukumäärä."
+
+#: ../data/preferences.ui.h:15
+msgid "Number of recent items"
+msgstr "Kohteiden lukumäärä"
+
+#: ../data/preferences.ui.h:16 ../unity-scope-umenu/unity-scope-umenu.vala:75
+msgid "Clipboard"
+msgstr "Leikepöytä"
+
+#: ../data/preferences.ui.h:17
+msgid ""
+"Please register custom shortcut with\n"
+"your desktop environment.\n"
+"Use /usr/bin/umenu as command."
+msgstr ""
+"Rekisteröi mukautettu pikanäppäin\n"
+"työpöytäympäristössäsi.\n"
+"Käytä komentona /usr/bin/umenu"
+
+#: ../data/preferences.ui.h:20
+msgid "More information"
+msgstr "Lisätietoja"
+
+#: ../data/preferences.ui.h:21
+msgid "Hotkeys"
+msgstr "Pikanäppäimet"
+
+#: ../data/preferences.ui.h:22
+msgid "Plugins"
+msgstr "Liitännäiset"
+
+#: ../libumenu/clipboard-menu.vala:46
+msgid "<Empty>"
+msgstr "<Tyhjä>"
+
+#: ../libumenu/clipboard-menu.vala:53
+msgid "Privacy mode is enabled. No new items will be added to history!"
+msgstr ""
+
+#: ../plugins/indicator/indicator.plugin.in.h:1
+msgid "Application Indicator"
+msgstr "Sovellusilmaisin"
+
+#: ../plugins/indicator/indicator.plugin.in.h:2
+msgid "Access clipboard history with an application indicator."
+msgstr "Käytä leikepöydän historiaa sovellusilmaisimella."
+
+#: ../plugins/indicator/indicator.plugin.in.h:3
+msgid "Copyright © 2011 Umenu Team"
+msgstr "Tekijänoikeus © 2011 Umenu-kehittäjät"
+
+#: ../unity-scope-umenu/clipboard.scope.in.in.h:1
+msgid "Clipboard History"
+msgstr "Leikepöydän historia"
+
+#: ../unity-scope-umenu/clipboard.scope.in.in.h:2
+msgid ""
+"This is an Ubuntu search plugin that enables information from Umenu to be "
+"searched and displayed in the Dash underneath the Clipboard header."
+msgstr ""
+"Tämä on Ubuntun hakuliitännäinen, jolla tietoja Umenu-ohjelmasta voidaan "
+"hakea ja näyttää Unity-valikossa Leikepöytä-osiossa."
+
+#: ../unity-scope-umenu/clipboard.scope.in.in.h:3
+msgid "Search clipboard"
+msgstr "Etsi leikepöydältä"
+
+#: ../unity-scope-umenu/clipboard.scope.in.in.h:4
+#: ../unity-scope-umenu/unity-scope-umenu.vala:79
+#: ../unity-scope-umenu/unity-scope-umenu.vala:104
+msgid "Text"
+msgstr "Teksti"
+
+#: ../unity-scope-umenu/clipboard.scope.in.in.h:5
+#: ../unity-scope-umenu/unity-scope-umenu.vala:84
+#: ../unity-scope-umenu/unity-scope-umenu.vala:105
+msgid "Files"
+msgstr "Tiedostot"
+
+#: ../unity-scope-umenu/clipboard.scope.in.in.h:6
+#: ../unity-scope-umenu/unity-scope-umenu.vala:89
+#: ../unity-scope-umenu/unity-scope-umenu.vala:106
+msgid "Images"
+msgstr "Kuvat"
+
+#: ../unity-scope-umenu/clipboard.scope.in.in.h:7
+#: ../unity-scope-umenu/unity-scope-umenu.vala:101
+msgid "Category"
+msgstr "Luokka"
+
+#: ../unity-scope-umenu/clipboard.scope.in.in.h:8
+msgid "Text;Files;Images"
+msgstr "Teksti;Tiedostot;Kuvat"
+
+#: ../unity-scope-umenu/clipboard.scope.in.in.h:9
+msgid "Last 24 hours;Last 7 days;Last 30 days;Last year;"
+msgstr ""
+"Viimeiset 24 tuntia;Viimeiset 7 päivää;Viimeiset 30 päivää;Viime vuonna;"
+
+#: ../unity-scope-umenu/unity-scope-umenu.vala:45
+msgid "Search Clipboard"
+msgstr "Etsi leikepöydältä"
+
+#: ../unity-scope-umenu/unity-scope-umenu.vala:110
+#: ../unity-scope-umenu/unity-scope-umenu.vala:231
+msgid "Date copied"
+msgstr "Kopioimispäivä"
+
+#: ../unity-scope-umenu/unity-scope-umenu.vala:112
+msgid "Last 24 hours"
+msgstr "Viimeiset 24 tuntia"
+
+#: ../unity-scope-umenu/unity-scope-umenu.vala:113
+msgid "Last 7 days"
+msgstr "Viimeiset 7 päivää"
+
+#: ../unity-scope-umenu/unity-scope-umenu.vala:114
+msgid "Last 30 days"
+msgstr "Viimeiset 30 päivää"
+
+#: ../unity-scope-umenu/unity-scope-umenu.vala:115
+msgid "Last year"
+msgstr "Viime vuonna"
+
+#: ../unity-scope-umenu/unity-scope-umenu.vala:216
+msgid "Paste"
+msgstr "Liitä"
+
+#: ../unity-scope-umenu/unity-scope-umenu.vala:224
+msgid "Origin"
+msgstr "Alkuperä"

@@ -1,0 +1,14 @@
+_build_
+builddir
+*.pyc
+*.swp
+.lock-waf*
+.intlcache
+.idea
+deploy
+AppDir/*
+AppDir
+CLAUDE.md
+.env
+.aider*
+.coding-aider-plans

@@ -1,0 +1,9 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+
+data/umenu.desktop.in
+data/com.biryukwolf.umenu.gschema.xml
+libumenu/clipboard-menu.vala
+[type: gettext/ini]plugins/indicator/indicator.plugin.in
+[type: gettext/ini]unity-scope-umenu/clipboard.scope.in.in
+unity-scope-umenu/unity-scope-umenu.vala
